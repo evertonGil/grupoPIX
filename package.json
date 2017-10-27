@@ -1,0 +1,32 @@
+{
+  "name": "grupo-pix",
+  "version": "1.0.0",
+  "description": "Site do grupo PIX",
+  "main": "index.js",
+  "engines": {
+    "node": "6.11.2"
+  },
+  "scripts": {
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "lite-server --baseDir=public",
+    "build": " concurrently  \"lite-server --baseDir=app\" \" set NODE_ENV = teste\" \"nodemon app\"",
+    "gulp": "gulp"
+  },
+  "author": "everton",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "consign": "^0.1.6",
+    "express": "^4.15.2",
+    "express-load": "^1.1.15",
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "gulp": "^3.9.0",
+    "gulp-imagemin": "^2.3.0",
+    "lite-server": "^2.3.0",
+    "nodemon": "^1.12.1"
+  }
+}

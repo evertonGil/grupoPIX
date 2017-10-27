@@ -1,0 +1,298 @@
+/** Reset e tgs html5 **/ 
+	article, aside, details, figcaption, figure,footer, header, hgroup, nav, section {  display: block;}
+	audio, canvas, video {display: inline-block;  *display: inline;  *zoom: 1;}
+	.clear{clear:both;}
+	* { margin: 0;  padding: 0;  list-style:none;  text-decoration:none; border:none;}
+/** Fim Reset e tgs html5 **/ 
+
+/*** TAGS **/
+	body {font: 200 12px/1.3 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+	body.open{overflow: hidden;}
+	address{font-style:normal;}
+	h1{ font-size: 2.9em; font-weight:normal; color:#0e347d;}
+	h2{ }
+	h3{ }
+	p{margin:1em 0; line-height:1.4em; color: #6c6c6c;}
+	input[type='text']{ width: 100%; box-sizing: border-box; padding: 10px;}
+	img{max-width: 100%;}
+/*** FIM TAGS **/
+
+
+/*** Componentes **/
+	.overlay { position: absolute; width: 100%; height: 100%; background: rgba(6, 31, 62, 0.8); top: 0px; left: 0px; z-index: 1;	}
+	.overlay_pop {display: none; position: fixed; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); top: 0px; left: 0px; z-index: 9999;	}
+	.pop_up{min-width: 50%;min-height:300px;position: absolute;background-color: #fff;padding: 0;margin-left: -25%;left: 50%;top: 50px;border-radius: 8px;overflow: hidden;}
+	.pop_up .conteudo{margin:0px;padding: 0px;max-height: 80vh;overflow: auto;}
+	.pop_up iframe{display: block; margin:0px; padding: 0px;}
+	.pop_up .header{padding: 20px 40px;background-color: #f7f7f7;max-height: 20vh;}
+	.pop_up .header h2{margin: 0px; padding: 0 30px 0 0; font-weight: 300; font-size: 1.75rem;}
+	.pop_up .header .fechar{position: absolute;display: table;/* float: right; */font-weight: 200;right: 15px;top: 8px;cursor:pointer;font-size: 38px;}
+	.pop_up .header .fechar div{width: 30px;height: 30px; display: table-cell;vertical-align: middle;text-align: center;border-radius: 15px;/* border: 1px solid #ccc; */}
+/*** Fim Componentes **/
+
+/*** Master Page **/
+	header{padding: 20px 0;} 
+	header .logo img{width: 100px}
+	.menu{float: right;}
+	.icon-mobile{display: none;float: right;width: 45px;margin-top: 20px;}
+	.icon-mobile span{width: 100%; height: 5px; margin-bottom: 8px; display: block; background: #222;}
+	.menu ul {margin: 34px 0 0 0;display: flex;display: -webkit-flex;-webkit-transition: .4s;transition: .4s;-ms-transition: .4s;}
+	.menu li{margin: 0 15px;}
+	.menu a{display: block; font-size: 0.9rem; color: #000; font-weight: normal;}
+
+	.open .menu ul { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0);}
+	.open .menu li{flex-grow:1;}
+	.open .icon-mobile{position: fixed;z-index: 900;right: 0;top:0;margin: 20px 20px 0 0;}
+	.open .icon-mobile:after { content: "x"; display: table; font-size: 40px; color: #545454; line-height: 0px; margin: 10px 0 0 0; font-weight: 700;}
+	.open .icon-mobile span{display: none;}
+
+	#banner{width: 100%; height: 368px; background-image: url(../images/banner-home.jpg); background-position: center; background-size: cover;}
+	#banner .container{display: flex;height: 100%;align-items: center;justify-content: center;}
+	#banner h1{max-width: 710px;font-size: 1.8rem;color: #fff;text-align: center;padding: 0px 20px;}
+
+	.rodape{background: #1d1d1d; padding: 40px 0 75px 0; color: #d3d3d3; }
+	.rodape .logo{ width: 104px; height:68px;  }
+	.rodape .col-md-3{padding: 30px 30px 0 0;}
+	.redes_sociais.col-md-3{padding-top:0px;}
+	.redes_sociais li{padding: 4px 0;margin: 20px 0;}
+	.redes_sociais a{width: 19px;height: 19px;display: inline-block;background-repeat: no-repeat;vertical-align: middle;margin-left: 5px;opacity: 0.5;}
+	.redes_sociais .youtube{background-image: url(../images/icon-youtube.png);}
+	.redes_sociais .facebook{background-image: url(../images/icon-facebook.png);}
+	.redes_sociais .twitter{background-image: url(../images/icon-twitter.png);}
+	.redes_sociais h4{ font-size: 0.7rem;}
+	.menu_rodape{column-count: 2; column-gap: 0px;}
+	.menu_rodape a{color:#d3d3d3;font-size: 0.82rem;}
+	.newsletter p{margin: 0px;font-size: 0.82rem;}
+	.newsletter .input-group-btn{margin: 10px 0px; }
+	.newsletter .input-group-btn input[type='text']{ width: 80%; background-color: #303030; color: #999999; font-size: 0.6rem;  }
+	.newsletter .input-group-btn .btn{padding: 5px 8px; cursor: pointer; color: #fff; background-color: #000; font-size: 0.6rem; text-transform: uppercase;}
+	.dados_contato ul li{margin:10px;}
+	.dados_contato ul li img{margin: 0 10px 0 0;}
+
+	.sub_rodape .container{display: block;}
+	.sub_rodape{background: #161616; color: #a0a0a0; padding: 0px;}
+	.sub_rodape p{font-size: 0.8em; display: inline-block;}
+	.sub_rodape .copyright{ font-weight: 300;}
+/*** Fim Master Page **/
+
+
+/*** Home Page **/
+	#home h2{ font-size: 2.5rem;  color: #000; text-align: center; font-weight: 300;}
+	.intro{ margin-top: 80px; margin-bottom:40px;}
+	.intro p{font-size: 1.25rem; text-align: center;}
+
+	.lista_socios{margin-bottom: 110px;}
+	.lista_socios .col-md-4{padding: 0 50px}
+	.socio .logo_socio{height: 100px;width: 100%;display: flex;justify-content: center;align-items: center;flex-wrap: wrap;}
+	.socio .logo_socio img{width: auto; height: auto;}
+	.socio .logo_socio img{width: auto; height: auto;}
+	.socio p{font-weight: 400;}
+	.socio .links{margin: 20px 0 0 0;}
+	.socio .links .btn{background-color: #474747; color: #fff; font-size: 0.75rem; padding: 4px 15px; }
+	.socio .links .site{color:#5d5d5d; margin-left: 10px;}
+
+	.clientes{margin-top: 110px;}
+	.clientes h2{margin-bottom: 0px;}
+	.clientes p{font-size: 1.25rem; text-align: center; margin: 0px 0 50px 0;}
+	.lista_clientes{margin: 0 10px 150px 10px;position: relative;overflow: hidden;}
+	.lista_clientes .flex-viewport{padding: 0px; margin:0px 15px;}
+	.lista_clientes .slides li{}
+	.lista_clientes .slides li div{display: flex; width: 174px; height: 96px; align-items: center; justify-content: center; border: 1px solid #ccc;}
+	.lista_clientes .flex-direction-nav{position: absolute;top: 0;width: 100%;height: 100%;z-index: 99;/* overflow: visible; */}
+	.lista_clientes .flex-direction-nav li{display: flex;height: 100%;align-items: center;position: absolute;}
+	.lista_clientes .flex-direction-nav li.flex-nav-next{ right: 0px; }
+	.lista_clientes .flex-direction-nav a {text-decoration: none;display: flex;width: 25px;height: 25px;border: 1px solid #212121;border-radius: 25px;align-items: center;justify-content: center;color: #212121;cursor: pointer;}
+	.lista_clientes .flex-direction-nav a.flex-prev:after {display: block;}
+	.lista_clientes .flex-direction-nav a.flex-next {}
+	
+	#banner_cases{position: relative; }
+	#banner_cases .slides{}
+	#banner_cases .slides li{width:100%; height: 405px;background-size: cover;background-position: center;position: relative;}
+	#banner_cases .slides li .container{position: relative; z-index: 99;}
+	#banner_cases .slides li .container .conteudo{float: left; color: #fff; padding:50px 0;}
+	#banner_cases .slides li .container .conteudo h3{font-size: 0.812rem; text-transform: uppercase; margin: 0; opacity: 0.6;}
+	#banner_cases .slides li .container .conteudo p{color: #fff; font-size:1.5rem; font-weight: 400; position: relative; padding-top: 40px; margin: 0 0 10px 0;}
+	#banner_cases .slides li .container .conteudo p .quote{position: absolute; top: 0; left: -80px;}
+	#banner_cases .slides li .container .conteudo .cliente{display: flex; }
+	#banner_cases .slides li .container .conteudo .cliente h4{font-size: 0.87rem;font-weight: 400;display: flex;flex-wrap: wrap;justify-content: center;flex-direction: column;margin: 0 0 0 10px;}	
+	#banner_cases .slides li .container .conteudo .cliente h4 span{display: block;font-size: 0.82rem;font-weight: 300;/* width: 100%; */}	
+	#banner_cases .slides li .container .conteudo .cliente .logo{width: 105px;height: 55px;background-color: #fff;border-radius: 4px;display: flex;align-items: center;justify-items:center;}
+	#banner_cases .slides li .container .conteudo .cliente .logo img{ max-width:95%; }
+	#banner_cases .slides li .container .conteudo .mais_cases{display: inline-block; text-align: center; text-decoration: none; padding: 20px 25px; margin: 40px 0 0 0;color: #fff; border: 1px solid #fff; border-radius: 5px; transition: 1s;}
+	#banner_cases .slides li .container .conteudo .mais_cases:hover{background-color: rgba(255,255,255,0.5); color: #000;}
+	#banner_cases .slides li .link_video{width: 100%;height: 100%;position: absolute;z-index:1;top: 0;display: flex;justify-content: center;align-items: center;text-decoration: none;transition: 1s;}
+	#banner_cases .slides li .link_video:hover{background-color: rgba(0,0,0,0.3); }
+	#banner_cases .slides li .link_video .fa{width: 101px;height: 101px;color: #fff;font-size: 40px;display: flex;align-items: center;justify-content: center;border: 5px solid #fff;border-radius: 101px;text-indent: 4px; transition: 1s;}
+	#banner_cases .slides li .link_video:hover .fa{background-color: rgba(255,255,255,0.5);}
+	#banner_cases .flex-direction-nav{position: absolute; margin: 0; top: 0px; width: 100%;}
+	#banner_cases .flex-direction-nav li{display: flex;height: 405px;align-items: center;position: absolute;}
+	#banner_cases .flex-direction-nav li a{color: #fff; font-size: 3rem; opacity: 0.7;}
+	#banner_cases .flex-direction-nav li.flex-nav-next{right: 25px;}
+	#banner_cases .flex-direction-nav li.flex-nav-prev{left: 25px;}
+/*** Fim Home Page **/
+
+/*** Contato Page **/
+	.contato{display:none; max-width: 980px; margin: 0; padding: 50px 30px;}
+	.contato p{font-size: 1rem;}
+	.contato form .form-control{font-size: 0.75rem; padding: 10px; height: auto !important; border-color: #afafaf; color: #000;}
+	.contato form textarea{min-height: 140px;}
+	.contato form .btn{background-color: #000; color: #fff;}
+	.contato ul.contatos{margin-top: 20px;}
+	.contato ul.contatos li{margin: 15px 0;}
+	.contato ul.contatos li img{margin: 0 15px 0 0;}
+/*** Fim Contato Page **/
+
+/*** Empresas Page **/
+	#banner.empresa{height: 215px;}
+	#banner.empresa .container{justify-content: left; position: relative}
+	#banner.empresa h2{font-size: 2.5rem;text-align: left;display: flex;align-items: center; color: #fff;}
+	#banner.empresa h2 span{font-size: 1.56rem;height: 80px;display: flex; align-items: center;border-left: 1px solid #fff;padding-left: 20px;margin-left: 20px;font-weight: 200;}
+	
+	.redes_sociais_banner{width: 100%; position: absolute; bottom: 10px; right: 0px;}
+	.redes_sociais_banner a{display: inline-block; width:29px; height: 29px; background-image: url(../images/sprite-redes-sociais.png); background-repeat: no-repeat; margin: 0 5px;}
+	.redes_sociais_banner .youtube{background-position: 0px 0px;}
+	.redes_sociais_banner .facebook{background-position: -38px 0px ;}
+	.redes_sociais_banner .twitter{background-position: -77px 0px;}
+	.redes_sociais_banner a:hover{margin-bottom: 2px; transition: .1s;}
+
+	#empresa .conteudo{padding-top: 80px; padding-bottom: 80px;}
+	#empresa .conteudo h1{font-size: 1.75rem; font-weight: 200;}
+	#empresa .conteudo p{font-size: 1.07rem;  font-weight: 200;}
+	#empresa .conteudo .col-md-7{padding-right: 40px;}
+	#empresa .conteudo .links{margin-top: 20px;}
+	#empresa .conteudo .links .btn{ border:1px solid #000000; color: #000000; padding: 10px 20px; margin: 0 10px 0 0;}
+/*** Fim Empresas Page **/
+
+/*** Institucional Page **/
+	#banner.institucional{height: 200px;}
+	#banner.institucional .container{justify-content: left; position: relative}
+	#banner.institucional h2{font-size: 2.5rem; font-weight: 400;text-align: left;display: flex;align-items: center; color: #fff;}
+
+	.institucional .conteudo{padding-top: 120px; padding-bottom: 120px;}
+
+	.banner_trabalhe_conosco{height: 570px; background-image: url(../images/banner_trabalhe_conosco2.jpg); background-position: left top ; background-repeat: no-repeat; background-size: cover; position: relative;}
+	.banner_trabalhe_conosco .container{}
+	.banner_trabalhe_conosco .conteudo{max-width: 510px; float: right;}
+	.banner_trabalhe_conosco .conteudo h3{color: #2b2b2b; font-size: 2.5rem; font-weight: 200;}
+	.banner_trabalhe_conosco .conteudo h4{font-size: 1.2rem; font-weight: 200;}
+	.banner_trabalhe_conosco .conteudo .btn{ background: #000; color: #fff; font-size: 1rem; padding: 10px 15px; font-weight: 200;}
+/*** Fim Institucional Page **/
+
+
+
+@media (max-width: 1024px){
+	#banner_cases .slides li .container .conteudo{margin-left: 40px; width: 35%; }
+	#banner_cases .slides li .container .conteudo p { font-size: 1rem; }
+	#banner_cases .slides li .container .conteudo p .quote{width: 40px; left: -40px;}
+}
+@media only screen and (max-width: 992px){
+/*** componentes **/
+	.overlay_pop {display: none; position: fixed;}
+	.pop_up{width: 100%; height: 100%; margin-left: 0 !important; left: 0 !important; top: 0 !important; border-radius: 0px;}
+	.pop_up iframe {width: 100%;}
+	.pop_up .fechar{right: 10px; top: 10px;}
+/*** componentes TAGS **/
+}
+@media (max-width: 768px){
+	.pop_up .header h2{margin: 0px; padding: 0 30px 0 0; font-weight: 300; font-size: 1.3rem;}
+
+
+/*** Master Page **/
+	.menu{float: none;}
+	.row{align-items: center; justify-content: center;}
+	.rodape .col-md-3 {  padding: 30px 0px 0 0;  display: flex;  flex-direction: column;  justify-content: center;  align-items: center; text-align: center;}
+	.menu_rodape li{margin:15px 0;}
+	.redes_sociais ul li span{display: block;margin-bottom: 15px;}
+	.redes_sociais ul li a{margin:0 10px;}
+/*** Fim Master Page **/
+
+/*** Home Page **/
+	#home .lista_socios .col-md-4{margin-bottom: 40px}
+	.socio .links{display: flex; flex-direction: column;}
+	.socio .links .btn{padding: 15px; margin-bottom: 20px;}
+	.socio .links{text-align: center;}
+
+	#banner_cases .slides li {height: 600px; background-size: auto 60%; background-position: top center;background-repeat: no-repeat;}
+	#banner_cases .slides li .container {max-width: 100%; height: 40%; background-color: #333;margin: 0px;padding:0px;position: absolute;bottom: 0;}
+	#banner_cases .slides li .container .conteudo,
+	#banner_cases .slides li .container .col-md-5{width: 100%; max-width:100%; float: none; display: flex; flex-wrap: wrap; margin: 0px;padding:20px;}
+	#banner_cases .slides li .container .conteudo div{width: 50%; padding: 0 2px 0 2%;}
+	#banner_cases .slides li .container .conteudo .cliente{ width: 50%;}
+	#banner_cases .slides li .container .conteudo h3{margin: 0px 0 5px 0;}
+	#banner_cases .slides li .container .conteudo p{margin:0px; padding: 0px;}
+	#banner_cases .slides li .container .conteudo p .quote{display: none;}
+	#banner_cases .slides li .container .conteudo .cliente .logo {height: auto;}
+	#banner_cases .slides li .container .conteudo .mais_cases{width: 100%; margin: 30px 2% 0 10px;}
+	#banner_cases .slides li .link_video{height: 70%;}
+/*** Fim Home Page **/
+
+/*** Empresas Page **/
+	#banner.empresa .container{}
+	#banner.empresa h2{flex-direction: column; align-items: left;}
+	#banner.empresa h2 span{border-left: 0px; padding-left: 0; margin-left:0px; display: inline-block;}
+
+
+	#empresa .conteudo .links{display: flex; justify-content: center; flex-wrap: wrap;}
+	#empresa .conteudo .links .btn{margin-top: 10px;}
+	#empresa .conteudo .col-md-7{padding: 0 15px;}
+	#empresa .conteudo .col-md-5{text-align: center; margin-top: 40px;}
+/*** Fim Empresas Page **/
+
+
+/*** Institucional Page **/
+	.banner_trabalhe_conosco{height: auto; background-position: left top ; background-image: url(../images/banner_trabalhe_conosco_mobile.jpg); background-repeat: no-repeat; background-size: cover; background-position: top center; position: relative; margin: 0 30px 60px 30px;}
+	.banner_trabalhe_conosco .container{max-width: 75%; margin: 0; padding: 0px; margin: 0;}
+	.banner_trabalhe_conosco .conteudo{max-width: 100%; float: none; padding:30px 25px; margin-top: 200px; display: inline-block; background: #fff;}
+/*** Fim Institucional Page **/
+}
+@media (max-width: 480px){
+
+/*** Master Page **/
+	.menu{float: right;}
+	.menu .icon-mobile{display: block; }
+	.menu ul {width: 100%;height: 100%;position: fixed;z-index: 800;top: 0;bottom: 0;left: 0;background: #fff;margin: 0px;padding: 50px 0 0 0;display: flex;display: -webkit-flex;-webkit-transition: .4s;transition: .4s;-ms-transition: .4s;-webkit-transform: translate3d(100%, 0, 0);transform: translate3d(100%, 0, 0);flex-direction: column;-webkit-flex-direction: column;}
+	.menu ul li{display: block; float: none;}
+	.menu ul li a{width: 100%; height: auto; display: block;}
+	.open .menu {}
+	.open .menu ul { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0);}
+	.open .menu ul li{flex-grow:1;}
+	.open .menu ul li a{ text-align: center; padding: 10px 0;}
+	.open .menu ul li ul li{display: none;}
+	.open .menu .icon-mobile:after { content: "x"; display: table; font-size: 40px; color: #545454; line-height: 0px; margin: 10px 0 0 0; font-weight: 700;}
+	.open .menu .icon-mobile span{display: none;}
+/*** Fim Master Page **/
+
+	#banner h1{font-size: 1.4rem;}
+
+	#banner_cases .slides li {background-size: auto 50%;}
+	#banner_cases .slides li .container{height: 50%;}
+	#banner_cases .slides li .container .conteudo div{width: 60%;}
+	#banner_cases .slides li .container .conteudo .cliente{width: 40%;}
+	#banner_cases .slides li .container .conteudo .cliente{border: 1px solid #ccc;}
+	#banner_cases .slides li .container .conteudo .cliente .logo {display: none;}
+
+	.lista_socios .col-md-4 { padding: 0 10px;}
+
+/*** Empresas Page **/
+	#banner.empresa .container{}
+	#banner.empresa h2{font-size: 1.8rem;}
+	#banner.empresa h2 span{font-size: 1rem;}
+/*** Fim Empresas Page **/
+
+/*** Institucional Page **/
+.banner_trabalhe_conosco{margin-left: 15px; margin-right: 15px; border: 1px solid #ccc;}
+.banner_trabalhe_conosco .container{max-width: 100%;}
+.banner_trabalhe_conosco .conteudo{max-width: 100%; float: none; display: inline-block; background: #fff;}
+/*** Fim Institucional Page **/
+
+}
+@media (max-width: 340px){
+	body, html{font-size: 13px}
+	p, h1, h2, h3, h4, a{word-wrap: break-word;}
+	#banner_cases .slides li .container .conteudo div,
+	#banner_cases .slides li .container .conteudo .cliente,
+	#banner_cases .slides li .container .conteudo  .mais_cases{width: 100%; margin:20px 0px 0px 0px; text-align: center;}
+	#banner_cases .slides li .container .conteudo .cliente{text-align: center; border: 0px;}
+	#banner_cases .slides li .container .conteudo .cliente h4{margin:0px; width: 100%; font-weight: bold;}
+	#banner_cases .slides li .container .conteudo{flex-direction: column;}
+}
