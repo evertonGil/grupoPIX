@@ -1,4 +1,5 @@
 var express = require('express');
+var compression = require('compression');
 var bodyParser = require('body-parser');
 
 
@@ -9,6 +10,7 @@ module.exports = function(){
 	app.set('views', './app/views');
 
 
+	app.use(compression());
 	app.use(express.static('./public'));
 	app.use(bodyParser.urlencoded({extended: true}));
     app.use(bodyParser.json());
