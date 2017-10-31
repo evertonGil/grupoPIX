@@ -59,6 +59,7 @@ typings/
 
 dev/
 public/less
-public/templates
+public/templates/*
+!public/templates/contato.html
 public/css/style-bk29-07-17.css
 public/css/style_.css
