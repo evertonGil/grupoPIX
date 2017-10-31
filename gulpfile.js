@@ -6,7 +6,9 @@ var gulp = require('gulp')
 	,htmlReplace = require('gulp-html-replace')
 	,usemin = require('gulp-usemin')
 	,browserSync = require('browser-sync')
-	,less = require('gulp-less');
+	,less = require('gulp-less')
+	,autoprefixer = require('gulp-autoprefixer');
+
 
 
 gulp.task('copy',['clean', 'build-less'], function(){
@@ -34,7 +36,7 @@ gulp.task('usemin', function(){
 	.pipe(gulp.dest());
 })
 
-gulp.task('build-template', ['copy'], function(){
+gulp.task('build-template', ['copy'], function(){ 
 	return gulp.src('public/*.html')
 		.pipe(clean())
 		.pipe(htmlReplace({
@@ -67,6 +69,10 @@ gulp.task('build-less', function(){
               console.log('LESS, erro compilação: ' + erro.filename);
               console.log(erro.message);
             }))
+    	.pipe(autoprefixer({
+            browsers: ['last 20 versions'],
+            cascade: false
+        }))
     	.pipe(gulp.dest('dev/css'))
 });
 
