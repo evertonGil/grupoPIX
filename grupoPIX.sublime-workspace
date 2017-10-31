@@ -4,8 +4,60 @@
 		"selected_items":
 		[
 			[
+				"di",
+				"display"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"inle",
+				"inline-block"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"flex",
+				"flex-wrap"
+			],
+			[
 				"back",
-				"background-position"
+				"background"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"ht",
+				"htmlReplace"
+			],
+			[
+				"fun",
+				"function"
 			],
 			[
 				"bac",
@@ -16,10 +68,6 @@
 				"padding"
 			],
 			[
-				"mar",
-				"margin"
-			],
-			[
 				"backg",
 				"background-repeat"
 			],
@@ -28,20 +76,12 @@
 				"margin"
 			],
 			[
-				"flex",
-				"flex-wrap"
-			],
-			[
 				"alig",
 				"align-items"
 			],
 			[
 				"he",
 				"height"
-			],
-			[
-				"ba",
-				"background-repeat"
 			],
 			[
 				"fle",
@@ -66,18 +106,6 @@
 			[
 				"ali",
 				"align-items"
-			],
-			[
-				"di",
-				"div\tTag"
-			],
-			[
-				"font",
-				"font-size"
-			],
-			[
-				"align",
-				"text-align"
 			],
 			[
 				"marg",
@@ -117,10 +145,6 @@
 			],
 			[
 				"w",
-				"width"
-			],
-			[
-				"wid",
 				"width"
 			],
 			[
@@ -252,10 +276,6 @@
 				"console"
 			],
 			[
-				"fun",
-				"fun\tFunction"
-			],
-			[
 				"get",
 				"getAttribute"
 			],
@@ -300,28 +320,37 @@
 	"buffers":
 	[
 		{
-			"file": "public/index.html",
+			"file": "dev/less/cases.less",
 			"settings":
 			{
-				"buffer_size": 10962,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/institucional.html",
-			"settings":
-			{
-				"buffer_size": 7598,
+				"buffer_size": 2223,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "public/css/style.css",
+			"file": "dev/cases.html",
 			"settings":
 			{
-				"buffer_size": 18234,
+				"buffer_size": 4107,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dev/less/components.less",
+			"settings":
+			{
+				"buffer_size": 5815,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dev/templates/banner-cases.html",
+			"settings":
+			{
+				"buffer_size": 1775,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -343,7 +372,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 549.0
+		"width": 593.0
 	},
 	"console":
 	{
@@ -365,19 +394,54 @@
 	[
 		"/C/Users/egmss/Documents/freelas/grupoPIX",
 		"/C/Users/egmss/Documents/freelas/grupoPIX/config",
-		"/C/Users/egmss/Documents/freelas/grupoPIX/node_modules/livereload/examples",
-		"/C/Users/egmss/Documents/freelas/grupoPIX/node_modules/livereload/ext",
-		"/C/Users/egmss/Documents/freelas/grupoPIX/public",
-		"/C/Users/egmss/Documents/freelas/grupoPIX/public/css",
-		"/C/Users/egmss/Documents/freelas/grupoPIX/public/scripts"
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/css",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/less",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/scripts",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/templates"
 	],
 	"file_history":
 	[
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/css/style.css",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/less/components.less",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/templates/banner-cases.html",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/index.html",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/cases.html",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/less/style.less",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/templates/header.html",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/less/contato.less",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/scripts/pop_up.js",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/web-inteligente.html",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/institucional.html",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/infinity-plus.html",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/you-rocket.html",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/templates/contato.html",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/less/media-queries.less",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/less/home.less",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/gulpfile.js",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/less/empresas.less",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/less/master.less",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/css/base.css",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/less/tags.less",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/less/institucional.less",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/templates/banner-case.html",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/templates/footer.html",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/node_modules/consign/examples/express/api/middleware/user.js",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/package.json",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/css/style_.css",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/less/base.less",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/less/reset.less",
 		"/C/Users/egmss/Documents/freelas/grupoPIX/public/infinity-plus.html",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/public/index.html",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/header.js",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/footer.js",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/header.html",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/dev/footer.html",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/public/css/style.css",
+		"/C/Users/egmss/Documents/freelas/grupoPIX/public/institucional.html",
 		"/C/Users/egmss/Documents/freelas/grupoPIX/public/you-rocket.html",
 		"/C/Users/egmss/Documents/freelas/grupoPIX/config/express.js",
 		"/C/Users/egmss/Documents/freelas/grupoPIX/app.js",
-		"/C/Users/egmss/Documents/freelas/grupoPIX/package.json",
 		"/C/Users/egmss/Downloads/07-alurabank/alurabank/package.json",
 		"/C/Users/egmss/Downloads/06-alurabank/alurabank/package.json",
 		"/C/Users/egmss/fornecedores-casamento/package.json",
@@ -465,43 +529,11 @@
 		"/C/Users/egmss/f_casamento/js/app/models/Cardapio",
 		"/C/Users/egmss/f_casamento/js/app/models/fornecedor.js",
 		"/C/Users/egmss/casadocodigo/app/infra/ProdutosDAO.js",
-		"/C/Users/egmss/casadocodigo/app/routes/home.js",
-		"/C/Users/egmss/casadocodigo/app/views/produtos/lista.ejs",
-		"/C/Users/egmss/casadocodigo/config/express.js",
-		"/C/Users/egmss/casadocodigo/exclui-livros-terminal.js",
-		"/C/Users/egmss/casadocodigo/app/routes/produtos.js",
-		"/C/Users/egmss/casadocodigo/app/infra/connectionFactory.js",
-		"/C/Users/egmss/casadocodigo/test/produtos.js",
-		"/C/Users/egmss/casadocodigo/app/views/home/index.ejs",
-		"/C/Users/egmss/casadocodigo/app.js",
-		"/C/Users/egmss/casadocodigo/app/infra/dbConnection.js",
-		"/C/Users/egmss/Downloads/mysql-5.7.19-winx64/mysql-5.7.19-winx64/README",
-		"/C/Users/egmss/casadocodigo/views/produtos/lista.ejs",
-		"/C/Users/egmss/Documents/aulas alura/javascript-avancado-i-aula1/javascript-avancado-i-aula1/aluraframe/client/js/index.js",
-		"/C/Users/egmss/Documents/aulas alura/javascript-avancado-i-aula1/javascript-avancado-i-aula1/aluraframe/client/index.html",
-		"/C/Users/egmss/Documents/freelas/guianazesTem/js/planos_mobile.js",
-		"/C/Users/egmss/Documents/freelas/guianazesTem/js/planos_mobile_bk",
-		"/C/Users/egmss/Documents/freelas/guianazesTem/css/style-bk29-07-17.css",
-		"/C/Users/egmss/Documents/aulas alura/angular.js/01-alurapic/alurapic/public/js/controllers/fotos-controller.js",
-		"/C/Users/egmss/Documents/aulas alura/angular.js/01-alurapic/alurapic/public/js/directives/minhas-diretivas.js",
-		"/C/Users/egmss/Documents/aulas alura/angular.js/01-alurapic/alurapic/public/js/directives/minha-foto.html",
-		"/C/Users/egmss/Documents/aulas alura/angular.js/01-alurapic/alurapic/public/js/directives/minha-foto.js",
-		"/C/Users/egmss/Documents/aulas alura/angular.js/01-alurapic/alurapic/public/partials/foto.html",
-		"/C/Users/egmss/Documents/aulas alura/angular.js/01-alurapic/alurapic/public/css/efeitos.css",
-		"/C/Users/egmss/Documents/aulas alura/angular.js/01-alurapic/alurapic/public/js/directives/meu-painel.html",
-		"/C/Users/egmss/Documents/aulas alura/angular.js/01-alurapic/alurapic/public/partials/meu-painel.html",
-		"/C/Users/egmss/Documents/aulas alura/angular.js/01-alurapic/alurapic/app/api/index.js",
-		"/C/Users/egmss/Documents/aulas alura/angular.js/01-alurapic/alurapic/config/database.js",
-		"/C/Users/egmss/Documents/aulas alura/angular.js/01-alurapic/alurapic/config/express.js",
-		"/C/Users/egmss/Documents/aulas alura/angular.js/01-alurapic/alurapic/data.db",
-		"/C/Users/egmss/Downloads/introducao-javascript-capitulo-5/introducao-javascript/js/calcula-imc.js",
-		"/C/Users/egmss/Downloads/introducao-javascript-capitulo-5/introducao-javascript/js/form.js",
-		"/C/Users/egmss/Downloads/introducao-javascript-capitulo-5/introducao-javascript/index.html",
-		"/C/Users/egmss/Documents/work apresentation.txt"
+		"/C/Users/egmss/casadocodigo/app/routes/home.js"
 	],
 	"find":
 	{
-		"height": 43.0
+		"height": 958.0
 	},
 	"find_in_files":
 	{
@@ -515,6 +547,39 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"a href=\"#\"",
+			"link-video",
+			"<div class=\"overlay\"></div>",
+			"border",
+			"data-youtube=\"https://www.youtube.com/embed/SsujsWrjUGM\"",
+			"<div class=\"contato row\">\n\t<div class=\"col-md-6\">\n\t\t<p>Seu contato é muito importante para o Grupo PIX. Preencha o formulário e solicite mais informações sobre nossos produtos, tire dúvidas e nos envie sugestões para melhorarmos a cada dia mais e prestar o melhor serviço para nossos parceiros.</p>\n\t\t<ul class=\"contatos\">\n\t\t\t<li>\n\t\t\t\t<img src=\"images/icon-email-p.png\" alt=\"icone fale conosco\">\n\t\t\t\t<span>contato@grupopix.com.br</span>\n\t\t\t</li>\n\t\t\t<li>\n\t\t\t\t<img src=\"images/icon-phone-p.png\" alt=\"icone telefone\">\n\t\t\t\t<span>(55 11) 3333.3333</span>\n\t\t\t</li>\n\t\t</ul>\n\t</div>\n\t\n\t<form class=\"form col-md-6\">\n\t\t<fieldset>\n\t\t\t<ul>\n\t\t\t\t<li class=\"form-group\">\n\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"nome\"  name=\"nome\" placeholder=\"Nome\" />\n\t\t\t\t</li>\n\t\t\t\t<li class=\"form-group\">\n\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"email\"  name=\"email\" placeholder=\"E-mail\" />\n\t\t\t\t</li>\n\t\t\t\t<li class=\"form-group form-row\">\n\t\t\t\t\t<div class=\"col\">\n\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"telefone\"  name=\"telefone\" placeholder=\"Telefone\" />\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"col\">\n\t\t\t\t\t\t<select class=\"form-control\">\n\t\t\t\t\t\t\t<option value=\"\">Estado</option>\n\t\t\t\t\t\t</select>\n\t\t\t\t\t</div>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"form-group\">\n\t\t\t\t\t<select class=\"form-control\">\n\t\t\t\t\t\t<option value=\"\">Assunto</option>\n\t\t\t\t\t</select>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"form-group\">\n\t\t\t\t\t<textarea class=\"form-control\" id=\"mensagem\" name=\"mensagem\" placeholder=\"Deixe sua mensagem\" ></textarea>\n\t\t\t\t</li>\n\t\t\t</ul>\n\t\t</fieldset>\n\t\t<input type=\"submit\" value=\"Enviar\" class=\"btn\" />\n\t</form>\n</div>",
+			"this",
+			";",
+			"{",
+			";",
+			"{",
+			".resposivo-width",
+			";",
+			".slide_cases",
+			"banner_cases",
+			"slides",
+			".resposivo-width",
+			"margin: 20px 0px 0px 0px;",
+			".resposivo-width",
+			" margin:20px 0px 0px 0px;",
+			".mais_cases",
+			";",
+			"}",
+			"{",
+			"{ ",
+			";\n\n}",
+			";",
+			"}",
+			"{",
+			"<header>\n\t<div class=\"container\">",
+			"<header>\n\t<div class=\"container\">\n\t\t<a href=\"/\" class=\"logo\"><img  src=\"images/logo_pix_p.svg\" alt=\"Logo Pix -  referência em soluções de internet e tecnologia para comunicação e estratégia de marketing\"></a>\n\t\t<nav class=\"menu\">\n\t\t\t<div class=\"icon-mobile\"><span></span><span></span><span></span></div>\n\t\t\t<ul>\n\t\t\t\t<li><a href=\"institucional.html\"> Institucional </a></li>\n\t\t\t\t<li><a href=\"#\"> Produtos </a></li>\n\t\t\t\t<li><a href=\"#\"> Cases </a></li>\n\t\t\t\t<li><a href=\"#\" class=\"open_pop_up\" data-conteudo=\"$('.contato')\" data-titulo=\"Entre em contato para solicitar mais informações\">Fale conosco</a></li>\n\t\t\t</ul>\n\t\t</nav>\n\t</div>\n</header>",
+			"<section class=\"overlay_pop\">\n\t<div class=\"pop_up\">\n\t\t<div class=\"header\">\n\t\t\t<h2>Teste</h2>\n\t\t\t<div class=\"fechar\"><div>x</div></div>\n\t\t</div>\n\t\t<div class=\"conteudo\">\n\t\t\t\n\t\t</div>\t\t\n\t</div>\n</section>",
+			"<footer id=\"rodape\">",
 			"empresa",
 			"left",
 			"rodape",
@@ -612,6 +677,18 @@
 		"regex": false,
 		"replace_history":
 		[
+			"",
+			";\n",
+			"{\n",
+			";\n",
+			"{\n",
+			";\n",
+			"\n}",
+			"{\n",
+			";\n}",
+			";\n",
+			"\n}",
+			"{\n",
 			"520",
 			";}",
 			"'}\n",
@@ -675,33 +752,32 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "public/index.html",
+					"file": "dev/less/cases.less",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10962,
+						"buffer_size": 2223,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1967,
-								1967
+								1447,
+								1447
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/LESS/LESS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 4050.0,
+						"translation.y": 1639.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -709,19 +785,27 @@
 				},
 				{
 					"buffer": 1,
-					"file": "public/institucional.html",
+					"file": "dev/cases.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7598,
+						"buffer_size": 4107,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2435,
-								2435
+								2471,
+								2471
+							],
+							[
+								3029,
+								3029
+							],
+							[
+								3587,
+								3587
 							]
 						],
 						"settings":
@@ -730,36 +814,69 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1775.0,
+						"translation.y": 1540.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "public/css/style.css",
+					"file": "dev/less/components.less",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 18234,
+						"buffer_size": 5815,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11442,
-								11442
+								5068,
+								5068
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"syntax": "Packages/LESS/LESS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3396.0,
+						"translation.y": 6480.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "dev/templates/banner-cases.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1775,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								913,
+								913
+							],
+							[
+								1751,
+								1751
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 400.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -770,7 +887,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 32.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -807,7 +924,7 @@
 	"project": "grupoPIX.sublime-project",
 	"replace":
 	{
-		"height": 80.0
+		"height": 1910.0
 	},
 	"save_all_on_build": true,
 	"select_file":

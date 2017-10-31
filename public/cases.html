@@ -27,8 +27,23 @@
 	<script src="scripts/jquery.js"></script>
 	<script src="scripts/menu.js"></script>
 	<script src="scripts/pop_up.js"></script>
+	<script src="scripts/isotope.pkgd.min.js"></script>
 
-	<script src="scripts/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$(window).load(function() {
+			var $grid = $('.grid').isotope({
+			  // options
+			  itemSelector: '.case',
+			  layoutMode: 'fitRows'
+			});
+
+			$(".filtro-cases li").on('click', function(){
+				var filterValue = $(this).attr('data-filter');
+				$grid.isotope({ filter: filterValue });
+			})
+
+		});
+	</script>
 
 
 </head>
@@ -56,43 +71,80 @@
 </header>
 
 
-<section id="banner" class="institucional" style="background-image: url(images/banner-infinity-plus.jpg)">
+<section id="banner" class="cases" style="background-image: url(images/banner-cases.jpg)">
 	<div class="container">
-		<h2 class="titulo">
-			Sobre o Grupo PIX
+		<h2 class="titulo video" data-youtube="https://www.youtube.com/embed/SsujsWrjUGM">
+			<i class="fa fa-play" aria-hidden="true"></i>
+			Conheça as empresas que utilizam as nossas soluções para melhorar <strong> seus resultados</strong>
 		</h2>
 	</div>
 </section>
 
-<section class="institucional">
-	<div class="container">
-		<div class="row conteudo">
-			<div class="col-md-6">
-				<h1>O Grupo PIX é referência em soluções de internet e tecnologia para comunicação e estratégia de marketing da sua empresa</h1>
-				<p>
-					Nosso foco principal são os resultados dos nossos parceiros, nosso portfólio de clientes mostra que não somos voltados a nenhum segmento específico de negócios: com planejamento bem feito, tudo é possível. Somos seu parceiro com especialistas para podermos oferecer aos nossos clientes uma solução completa e adequada.
-				</p>
-				<p>
-					Nosso foco principal são os resultados dos nossos parceiros, nosso portfólio de clientes mostra que não somos voltados a nenhum segmento específico de negócios.
-				</p>
-			</div>
-			<div class="col-md-6 video">
-				<iframe width="100%" height="300" src="https://www.youtube.com/embed/SsujsWrjUGM" frameborder="0" allowfullscreen=""></iframe>
-			</div>
+<section class="cases">
+	<div class="filtro-cases">
+		<div class="container">
+			<h4 data-filter="">Veja os cases de cada empresa <i class="fa fa-long-arrow-right"></i></h4>
+			<UL>
+				<li class="" data-filter=".infinity-plus">Infinity Plus</li>
+				<li class="" data-filter=".web-inteligente">Web Inteligente</li>
+				<li class="" data-filter=".you-content">You Content</li>
+			</UL>
 		</div>
 	</div>
-	<div class="banner_trabalhe_conosco">
-		<div class="container">
-			<div class="conteudo">
-				<h3>Trabalhe conosco</h3>
-				<h4>Venha fazer parte do time e ser um Pixer</h4>
-				<p>
-					Trabalhar aqui é viver em um ambiente muito alegre e agradável, onde todos buscam contribuir não só para a satisfação de nosos clientes, como também para o cumprimento de nossa missão.
-				</p>
-				<a href="#" class="btn">Envie seu currículo</a>
+	<div class="container lista_cases">
+		<p class="texto_info_cases">Veja nossos vídeo cases e entenda porque
+utilizar os serviços do Grupo PIX</p>
+		<div class="row conteudo grid">
+
+			<div class="col-md-4 case web-inteligente video" data-youtube="https://www.youtube.com/embed/SsujsWrjUGM">
+				<div class="thumb_video">
+					<div class="link_video"><i class="fa fa-play border-radius" aria-hidden="true"></i></div>
+
+					<img src="images/case-compagno.jpg" class="" />
+				</div>
+				<div class="cliente">
+					<div class="logo"><img src="images/logo-compagno.png" alt=""></div>
+					<h4>
+						Gustavo Fratini
+						<span>Diretor Comercial</span>
+						<span class="autor">CLIENTE WEB INTELIGENTE</span>
+					</h4>
+				</div>
 			</div>
-		</div>		
+			<div class="col-md-4 case web-inteligente video" data-youtube="https://www.youtube.com/embed/SsujsWrjUGM">
+				<div class="thumb_video" >
+					<div class="link_video"><i class="fa fa-play border-radius" aria-hidden="true"></i></div>
+
+					<img src="images/case-compagno.jpg" class="" />
+				</div>
+				<div class="cliente">
+					<div class="logo"><img src="images/logo-compagno.png" alt=""></div>
+					<h4>
+						Gustavo Fratini
+						<span>Diretor Comercial</span>
+						<span class="autor">CLIENTE WEB INTELIGENTE</span>
+					</h4>
+				</div>
+			</div>
+			<div class="col-md-4 case web-inteligente video" data-youtube="https://www.youtube.com/embed/SsujsWrjUGM">
+				<div class="thumb_video" >
+					<div class="link_video"><i class="fa fa-play border-radius" aria-hidden="true"></i></div>
+
+					<img src="images/case-compagno.jpg" class="" />
+				</div>
+				<div class="cliente">
+					<div class="logo"><img src="images/logo-compagno.png" alt=""></div>
+					<h4>
+						Gustavo Fratini
+						<span>Diretor Comercial</span>
+						<span class="autor">CLIENTE WEB INTELIGENTE</span>
+					</h4>
+				</div>
+			</div>
+
+		</div>
 	</div>
+	
 </section>
 
 <footer id="rodape">
@@ -174,7 +226,6 @@
 		</div>		
 	</div>
 </section>
-
 
 
 

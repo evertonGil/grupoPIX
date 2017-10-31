@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+dev/
+public/less
+public/templates
+public/css/style-bk29-07-17.css
+public/css/style_.css

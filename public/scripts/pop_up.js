@@ -6,10 +6,18 @@ $(window).load(function(){
 		$(".pop_up .header h2").html($(this).attr("data-titulo"));
 
 		if($(this).attr("data-conteudo")){
+
 			var conteudo = eval($(this).attr("data-conteudo")).clone();
-			conteudo.css({display: 'flex'});
+	    	conteudo.css({display: 'flex'});
+
 			$(".pop_up .conteudo").html(conteudo);
 		}
+		if($(this).attr("data-url")){
+		    	var url = $(this).attr("data-url");
+
+		    	console.log(url);
+		    	$(".pop_up .conteudo").load(url);
+		    }
 
 		var width = $(".overlay_pop .pop_up").outerWidth();
 		var metadeWidth = -parseInt(width / 2);
