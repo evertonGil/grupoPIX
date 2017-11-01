@@ -47,6 +47,7 @@ address {
 h1 {
   font-size: 1.75rem;
   font-weight: 200;
+  color: #000;
 }
 p {
   margin: 1em 0;
@@ -149,6 +150,7 @@ img {
   padding: 0 30px 0 0;
   font-weight: 300;
   font-size: 1.75rem;
+  color: #000;
 }
 @media (max-width: 768px) {
   .pop_up .header h2 {
@@ -283,7 +285,7 @@ img {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  padding: 20px 25px;
+  padding: 12px 33px;
   margin: 40px 0 0 0;
   color: #fff;
   border: 1px solid #fff;
@@ -415,8 +417,8 @@ img {
   }
 }
 .cliente h4 {
-  font-size: 0.87rem;
-  font-weight: 400;
+  font-size: 0.9rem;
+  font-weight: 700;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -461,7 +463,10 @@ img {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  justify-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 @media (max-width: 768px) {
   .cliente .logo {
@@ -488,7 +493,7 @@ img {
 }
 .slide_cases li {
   width: 100%;
-  height: 455px;
+  height: 405px;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -553,7 +558,7 @@ header {
   padding: 20px 0;
 }
 header .logo img {
-  width: 100px;
+  width: 116px;
 }
 .icon-mobile {
   display: none;
@@ -606,7 +611,7 @@ header .logo img {
   }
 }
 .menu ul {
-  margin: 34px 0 0 0;
+  margin: 30px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -615,6 +620,7 @@ header .logo img {
   -o-transition: .4s;
   transition: .4s;
   -ms-transition: .4s;
+  margin-right: -15px;
 }
 @media (max-width: 480px) {
   .menu ul {
@@ -657,10 +663,13 @@ header .logo img {
 .menu li:hover .sub-menu {
   display: block;
 }
+.menu li:last-child {
+  margin-right: 0px;
+}
 .menu a {
   display: block;
   font-size: 0.9rem;
-  color: #000;
+  color: #2e2e2e;
   font-weight: normal;
   padding: 10px;
 }
@@ -748,7 +757,8 @@ header .logo img {
   font-size: 1.8rem;
   color: #fff;
   text-align: center;
-  padding: 0px 20px;
+  padding: 10px 20px 0px 20px;
+  font-weight: normal;
 }
 @media (max-width: 480px) {
   #banner h1 {
@@ -760,9 +770,15 @@ header .logo img {
   padding: 40px 0 75px 0;
   color: #d3d3d3;
 }
+@media (max-width: 768px) {
+  .rodape {
+    padding: 40px 0 20px 0;
+  }
+}
 .rodape .logo {
   width: 104px;
   height: 68px;
+  margin-bottom: 20px;
 }
 @media (max-width: 768px) {
   .rodape .row {
@@ -777,11 +793,11 @@ header .logo img {
   }
 }
 .rodape .col-md-3 {
-  padding: 30px 30px 0 0;
+  padding: 10px 30px 0 0;
 }
 @media (max-width: 768px) {
   .rodape .col-md-3 {
-    padding: 30px 0px 0 0;
+    padding: 30px 30px 0 30px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -802,16 +818,44 @@ header .logo img {
     text-align: center;
   }
 }
+.rodape .dados_contato {
+  padding-left: 30px;
+}
+.rodape .dados_contato li {
+  margin: 10px;
+  font-size: .75rem;
+}
+.rodape .dados_contato li img {
+  margin: 0 10px 0 0;
+}
 .redes_sociais.col-md-3 {
   padding-top: 0px;
+  margin-top: -20px;
+}
+@media (max-width: 768px) {
+  .redes_sociais.col-md-3 {
+    margin: 20px;
+  }
+}
+.redes_sociais.col-md-3 ul {
+  margin: 0px;
 }
 .redes_sociais.col-md-3 li {
-  padding: 4px 0;
-  margin: 20px 0;
+  margin: 15px 0;
+  font-size: .75rem;
+  color: #fff;
 }
 @media (max-width: 768px) {
   .redes_sociais.col-md-3 li {
     margin: 15px 0;
+  }
+}
+.redes_sociais.col-md-3 li span {
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .redes_sociais.col-md-3 li span {
+    margin: 0;
   }
 }
 @media (max-width: 768px) {
@@ -844,7 +888,10 @@ header .logo img {
   background-image: url(../images/icon-twitter.png);
 }
 .redes_sociais.col-md-3 h4 {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
 }
 .menu_rodape {
   -webkit-column-count: 2;
@@ -857,33 +904,40 @@ header .logo img {
 .menu_rodape a {
   color: #d3d3d3;
   font-size: 0.82rem;
+  font-weight: 200;
+}
+.newsletter {
+  background: url(../images/separador_rodape.jpg) top right repeat-y;
 }
 .newsletter p {
   margin: 0px;
   font-size: 0.82rem;
+  color: #d3d3d3;
+  font-weight: 200;
 }
 .newsletter .input-group-btn {
   margin: 10px 0px;
+}
+@media (max-width: 768px) {
+  .newsletter .input-group-btn {
+    width: 100%;
+  }
 }
 .newsletter .input-group-btn input[type='text'] {
   width: 80%;
   background-color: #303030;
   color: #999999;
-  font-size: 0.6rem;
+  font-size: 0.65rem;
+  -webkit-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
 }
 .newsletter .input-group-btn .btn {
   padding: 5px 8px;
   cursor: pointer;
   color: #fff;
   background-color: #000;
-  font-size: 0.6rem;
+  font-size: 0.65rem;
   text-transform: uppercase;
-}
-.dados_contato li {
-  margin: 10px;
-}
-.dados_contato li img {
-  margin: 0 10px 0 0;
 }
 .sub_rodape {
   background: #161616;
@@ -894,37 +948,55 @@ header .logo img {
   display: block;
 }
 .sub_rodape p {
-  font-size: 0.8em;
+  font-size: 0.75em;
+  font-weight: 200;
   display: inline-block;
+  color: #a0a0a0;
 }
 .sub_rodape .copyright {
   font-weight: 300;
 }
 /*** Fim Master Page **/
 /*** Home Page **/
-#home h2 {
+.home h2 {
   font-size: 2.5rem;
   color: #000;
   text-align: center;
   font-weight: 300;
 }
 .intro {
-  margin-top: 80px;
+  margin-top: 95px;
   margin-bottom: 40px;
 }
 .intro p {
   font-size: 1.25rem;
   text-align: center;
+  font-weight: 200;
+  margin: 0.5em 0;
 }
 .lista_socios {
   margin-bottom: 110px;
 }
 .lista_socios .col-md-4 {
   padding: 0 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 @media (max-width: 480px) {
   .lista_socios .col-md-4 {
     padding: 0 10px;
+    margin-bottom: 40px;
   }
 }
 .socio .logo_socio {
@@ -950,13 +1022,10 @@ header .logo img {
   width: auto;
   height: auto;
 }
-.socio .logo_socio img {
-  width: auto;
-  height: auto;
-}
 .socio p {
   font-size: .9rem;
   font-weight: 400;
+  color: #676767;
 }
 .socio .links {
   margin: 20px 0 0 0;
@@ -965,12 +1034,15 @@ header .logo img {
   background-color: #474747;
   color: #fff;
   font-size: 0.75rem;
-  padding: 4px 15px;
+  padding: 6px 20px;
 }
 .socio .links .site {
   color: #5d5d5d;
   margin-left: 10px;
-  font-size: .7rem;
+  font-size: .75rem;
+}
+.socio .links .site .fa {
+  margin: 0 0 0 20px;
 }
 .clientes {
   margin-top: 110px;
@@ -978,11 +1050,14 @@ header .logo img {
 .clientes h2 {
   margin-bottom: 0px;
   text-align: center;
+  color: #2b2b2b;
 }
 .clientes p {
   font-size: 1.25rem;
   text-align: center;
   margin: 0px 0 50px 0;
+  font-weight: 200;
+  color: #5e5e5e;
 }
 .lista_clientes {
   margin: 0 10px 150px 10px;
@@ -1091,8 +1166,9 @@ header .logo img {
   margin: 0;
   padding: 50px 30px;
 }
-.contato p {
+.conteudo .contato p {
   font-size: 1rem;
+  margin-top: 0px;
 }
 .contato form .form-control {
   font-size: 0.75rem;
@@ -1101,18 +1177,26 @@ header .logo img {
   border-color: #afafaf;
   color: #000;
 }
+.contato form input {
+  color: #5a5a5a;
+  font-size: 0.75rem;
+}
 .contato form textarea {
   min-height: 140px;
 }
 .contato form .btn {
   background-color: #000;
   color: #fff;
+  padding: 10px 35px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
 }
 .contato ul.contatos {
   margin-top: 20px;
 }
 .contato ul.contatos li {
   margin: 15px 0;
+  color: #2d2d2d;
 }
 .contato ul.contatos li img {
   margin: 0 15px 0 0;
@@ -1147,8 +1231,12 @@ header .logo img {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+.institucional .conteudo .texto {
+  padding-right: 60px;
+}
 .conteudo p {
   font-size: 1.1rem;
+  font-weight: 200;
 }
 .banner_trabalhe_conosco {
   height: 610px;
@@ -1214,7 +1302,7 @@ header .logo img {
   }
 }
 .banner_trabalhe_conosco .conteudo {
-  max-width: 50%;
+  max-width: 52%;
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1236,11 +1324,16 @@ header .logo img {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  padding: 0px 40px 0px 100px;
+  padding: 0px 0px 0px 100px;
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(10%, #ffffff), to(#ffffff));
   background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #ffffff 10%, #ffffff 100%);
   background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #ffffff 10%, #ffffff 100%);
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #ffffff 10%, #ffffff 100%);
+}
+@media (max-width: 1024px) {
+  .banner_trabalhe_conosco .conteudo {
+    padding-right: 40px;
+  }
 }
 @media (max-width: 768px) {
   .banner_trabalhe_conosco .conteudo {
@@ -1264,15 +1357,22 @@ header .logo img {
   font-weight: 200;
 }
 .banner_trabalhe_conosco .conteudo h4 {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 200;
+  margin-bottom: 40px;
+  color: #5e5e5e;
 }
 .banner_trabalhe_conosco .conteudo .btn {
   background: #000;
   color: #fff;
   font-size: 1rem;
-  padding: 10px 15px;
+  padding: 6px 45px;
   font-weight: 200;
+}
+@media (max-width: 360px) {
+  .banner_trabalhe_conosco .conteudo .btn {
+    padding: 6px 15px;
+  }
 }
 /*** Fim Institucional Page **/
 /*** Empresas Page **/
@@ -1288,6 +1388,7 @@ header .logo img {
 }
 #banner.empresa h2 {
   font-size: 2.5rem;
+  font-weight: 400;
   text-align: left;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1300,7 +1401,7 @@ header .logo img {
   color: #fff;
 }
 #banner.empresa h2 span {
-  font-size: 1.56rem;
+  font-size: 1.6rem;
   height: 80px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1346,22 +1447,26 @@ header .logo img {
 }
 #empresa .conteudo {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 180px;
+}
+#empresa .conteudo h1 {
+  margin-bottom: 30px;
 }
 #empresa .conteudo p {
   font-size: 1.07rem;
   font-weight: 200;
+  margin: 1.1em 0;
 }
 #empresa .conteudo .col-md-7 {
   padding-right: 40px;
 }
 #empresa .conteudo .links {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 #empresa .conteudo .links .btn {
   border: 1px solid #000000;
   color: #000000;
-  padding: 10px 20px;
+  padding: 15px 60px;
   margin: 0 10px 0 0;
 }
 /*** Fim Empresas Page **/
@@ -1429,10 +1534,10 @@ header .logo img {
   }
 }
 #banner.cases h2 {
-  max-width: 610px;
+  max-width: 640px;
   text-align: center;
-  font-weight: 200;
-  font-size: 1.8rem;
+  font-weight: 400;
+  font-size: 1.9rem;
 }
 @media (max-width: 440px) {
   #banner.cases h2 {
@@ -1440,7 +1545,7 @@ header .logo img {
   }
 }
 #banner.cases h2 strong {
-  font-weight: 600;
+  font-weight: 700;
 }
 #banner.cases .fa-play {
   width: 100px;
@@ -1494,6 +1599,7 @@ header .logo img {
 .filtro-cases h4 {
   font-size: .9rem;
   line-height: 1em;
+  font-weight: 700;
   margin: 0px;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -1563,7 +1669,13 @@ header .logo img {
 .lista_cases .texto_info_cases {
   max-width: 600px;
   font-size: 1.75rem;
+  font-weight: 200;
+  color: #000;
   text-align: center;
+}
+.case {
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 .case .overlay {
   display: none;
@@ -1586,6 +1698,7 @@ header .logo img {
 }
 .case .cliente .logo {
   height: 70px;
+  width: 125px;
   border: 1px solid #ccc;
 }
 @media (max-width: 992px) {
@@ -1602,16 +1715,20 @@ header .logo img {
   }
 }
 .case .cliente h4 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 0.9rem;
+  color: #2e2e2e;
 }
 .case .cliente h4 span {
-  font-size: 0.75rem;
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: #767676;
 }
 .case .cliente .autor {
-  margin-top: 5px;
+  margin-top: 8px;
   font-size: .57rem;
   text-transform: uppercase;
+  color: #888888;
 }
 .case .thumb_video {
   display: -webkit-box;
@@ -1636,4 +1753,7 @@ header .logo img {
   z-index: 999;
   color: #fff;
   border-color: #fff;
+}
+.case .thumb_video img {
+  width: 100%;
 }
