@@ -83,7 +83,7 @@
 	<div class="container">
 		<h2 class="titulo">
 			Infinity Plus
-			<span>www.infinityplus.com.br</span>
+			<a href="http://www.infinityplus.com.br" target="_blank">www.infinityplus.com.br</a>
 		</h2>
 		<div class="redes_sociais_banner">
 			<div class="float-right">
@@ -124,8 +124,8 @@
 	<ul class="slides slide_cases">
 
 		<li class="" style="background-image: url(images/banner-case1.jpg);">
-			<div class="container">
-				<div class="conteudo_case col-md-5">
+
+				<div class="conteudo_case">
 					<div class="conteudo_case_info">
 						<h3>CLIENTE WEB INTELIGENTE</h3>
 						<p>
@@ -139,32 +139,32 @@
 					</div>
 					<a class="mais_cases" href="#">Mais Cases</a>
 				</div>
-			</div>
+
 			<div class="link_video video" data-titulo="Gustavo Fratini - Grupo Compagno" data-youtube="https://www.youtube.com/embed/SsujsWrjUGM">
 				<i class="fa fa-play" aria-hidden="true"></i>
 			</div>
 		</li>
 
 		<li class="" style="background-image: url(images/banner-case2.jpg);">
-			<div class="container">
-				<div class="conteudo_case col-md-5">
-					<div class="conteudo_case_info">
-						<h3>Cliente Infinity Pus</h3>
-						<p>
-							<img src="images/quote.png" class="quote">
-							O vídeo é uma ferramenta capaz de influenciar diratamente um processo de decisão.
-						</p>
-					</div>
-					<div class="cliente">
-						<div class="logo"><img src="images/logo-adriana-scartaris.png" alt=""></div>
-						<h4>
-							Adriana Scartaris
-							<span>Arquiteta</span>
-						 </h4>
-					</div>
-					<a class="mais_cases" href="#">Mais Cases</a>
+
+			<div class="conteudo_case">
+				<div class="conteudo_case_info">
+					<h3>Cliente Infinity Pus</h3>
+					<p>
+						<img src="images/quote.png" class="quote">
+						O vídeo é uma ferramenta capaz de influenciar diratamente um processo de decisão.
+					</p>
 				</div>
+				<div class="cliente">
+					<div class="logo"><img src="images/logo-adriana-scartaris.png" alt=""></div>
+					<h4>
+						Adriana Scartaris
+						<span>Arquiteta</span>
+					 </h4>
+				</div>
+				<a class="mais_cases" href="#">Mais Cases</a>
 			</div>
+
 			<div class="link_video video" data-titulo="Adriana Scartaris - Designer" data-youtube="https://www.youtube.com/embed/SsujsWrjUGM">
 				<i class="fa fa-play" aria-hidden="true"></i>
 			</div>
@@ -201,10 +201,17 @@
 			</div>
 			<div class="row">
 				<ul class="menu_rodape col-md-3">
-					<li><a href="">Sobre nós</a></li>
-					<li><a href="">Produtos</a></li>
+					<li><a href="institucional.html">Sobre nós</a></li>
+					<li>
+						<span>Produtos</span>
+						<ul class="sub-menu">
+							<li><a href="you-rocket.html" >Estratégia de marketing </a></li>
+							<li><a href="web-inteligente.html" >Comunicação visual </a></li>
+							<li><a href="infinity-plus.html" >Produção de vídeos </a></li> 
+						</ul>
+					</li>
 					<li><a href="">Cases</a></li>
-					<li><a href="">Fale conosco</a></li>
+					<li><a href="#" class="open_pop_up"  data-url="templates/contato.html" data-titulo="Entre em contato para solicitar mais informações">Fale conosco</a></li>
 					<li><a href="">Trabalhe conosco</a></li>
 				</ul>
 
@@ -224,7 +231,7 @@
 						</li>
 						<li>
 							<img src="images/icon-email.png" alt="icone fale conosco">
-							<span>Fale conosco</span>
+							<span class="open_pop_up"  data-url="templates/contato.html" data-titulo="Entre em contato para solicitar mais informações"> Fale conosco</span>
 						</li>
 					</ul>
 				</div>
@@ -266,13 +273,16 @@
 <section class="overlay_pop">
 	<div class="pop_up">
 		<div class="header">
-			<h2>Teste</h2>
-			<div class="fechar"><div class="icone_fechar">x</div></div>
+			<h2>pop_up</h2>
 		</div>
+		<button class="fechar"></button>
 		<div class="conteudo">
 			
 		</div>		
 	</div>
+	<script>
+	$(".overlay_pop").hide();
+	</script>
 </section>
 
 

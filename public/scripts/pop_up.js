@@ -2,11 +2,13 @@ $(window).load(function(){
 
 	$(".open_pop_up").on('click', function(){
 		$('body').addClass("open");
+		$(".pop_up").removeClass('video');
+		$(".pop_up .fechar").html('<div class="icone_fechar">x</div>');
+
 		$(".overlay_pop").show();
 		$(".pop_up .header h2").html($(this).attr("data-titulo"));
 
 		if($(this).attr("data-conteudo")){
-
 			var conteudo = eval($(this).attr("data-conteudo")).clone();
 	    	conteudo.css({display: 'flex'});
 
@@ -17,14 +19,7 @@ $(window).load(function(){
 
 		    	console.log(url);
 		    	$(".pop_up .conteudo").load(url);
-		    }
-
-		var width = $(".overlay_pop .pop_up").outerWidth();
-		var metadeWidth = -parseInt(width / 2);
-		$(".overlay_pop .pop_up").css({
-			marginLeft :  metadeWidth
-		});
-		
+		}
 	});
 
 
@@ -35,20 +30,18 @@ $(window).load(function(){
 
 	$(".video").on('click', function () {
 		linkfinal = youtube1 + $(this).attr('data-youtube') + youtube2;
-		$(".overlay_pop .conteudo").html(linkfinal);
-		$(".overlay_pop .header h2").html($(this).attr('data-titulo'));
-		$(".overlay_pop").show();
+		$(".pop_up").addClass('video');
+		$(".pop_up .fechar").html('<i class="fa fa-times-circle-o "></i>');
 
-		var width = $(".overlay_pop .pop_up").outerWidth();
-		var metadeWidth = -parseInt(width / 2);
-		$(".overlay_pop .pop_up").css({
-			marginLeft :  metadeWidth
-		});
+		$(".pop_up .conteudo").html(linkfinal);
+		$(".overlay_pop").show();
 
 	});
 
+
 	$(".overlay_pop").on('click', function (event) {
-		if(event.target.classList.contains("overlay_pop") || event.target.parentNode.classList.contains("fechar")){
+		console.log(this)
+		if(event.target.classList.contains("overlay_pop") || event.target.classList.contains("fechar") || event.target.parentNode.classList.contains("fechar")){
 			$(".overlay_pop .conteudo").html('');
 			$(".overlay_pop").hide();
 			$('body').removeClass("open");
