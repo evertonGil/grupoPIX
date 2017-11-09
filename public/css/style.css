@@ -1453,7 +1453,6 @@ header .logo img {
 }
 @media (max-width: 768px) {
   .banner_trabalhe_conosco {
-    height: auto;
     background-image: url(../images/banner_trabalhe_conosco_mobile.jpg);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
