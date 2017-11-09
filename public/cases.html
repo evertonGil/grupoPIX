@@ -50,8 +50,28 @@
 
 </head>
 <body>
-<!-- build:header -->
-<!-- endbuild -->
+<header>
+	<div class="container">
+		<a href="/" class="logo"><img  src="images/logo_pix_p.svg" alt="Logo Grupo Pix -  referência em soluções de internet e tecnologia para comunicação e estratégia de marketing"></a>
+		<nav class="menu">
+			<div class="icon-mobile"><span></span><span></span><span></span></div>
+			<ul>
+				<li><a href="institucional.html"> Institucional </a></li>
+				<li>
+					<a href="#"> Produtos </a>
+					<ul class="sub-menu">
+						<li><a href="you-rocket.html" >Estratégia de marketing </a></li>
+						<li><a href="web-inteligente.html" >Comunicação visual </a></li>
+						<li><a href="infinity-plus.html" >Produção de vídeos </a></li> 
+					</ul>
+				</li>
+				<li><a href="cases.html"> Cases </a></li>
+				<li><a href="#" class="open_pop_up"  data-url="templates/contato.html" data-titulo="Entre em contato para solicitar mais informações">Fale conosco</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
 
 <section id="banner" class="cases" style="background-image: url(images/banner-cases.jpg)">
 	<div class="container">
@@ -175,11 +195,100 @@ utilizar os serviços do Grupo PIX</p>
 	
 </section>
 
-<!-- build:footer -->
-<!-- endbuild -->
+<footer id="rodape">
+	<section class="rodape">
+		<div class="container">
+			<div class="row">
+				<img class="logo" src="images/logo_pix_b.svg" alt="Logo Grupo PIX" />
+			</div>
+			<div class="row">
+				<ul class="menu_rodape col-md-3">
+					<li><a href="institucional.html">Sobre nós</a></li>
+					<li>
+						<span>Produtos</span>
+						<ul class="sub-menu">
+							<li><a href="you-rocket.html" >Estratégia de marketing </a></li>
+							<li><a href="web-inteligente.html" >Comunicação visual </a></li>
+							<li><a href="infinity-plus.html" >Produção de vídeos </a></li> 
+						</ul>
+					</li>
+					<li><a href="">Cases</a></li>
+					<li><a href="#" class="open_pop_up"  data-url="templates/contato.html" data-titulo="Entre em contato para solicitar mais informações">Fale conosco</a></li>
+					<li><a href="">Trabalhe conosco</a></li>
+				</ul>
 
-<!-- build:contato -->
-<!-- endbuild -->
+				<div class="newsletter col-md-3">
+					<p>Receba gratuitamente as novidades sobre nossos produtos</p>
+					<div class="input-group-btn">
+						<input type="text" name="email" placeholder="Digite seu e-mail" />
+						<button class="btn">Enviar</button>
+					</div>
+				</div>
+				
+				<div class="dados_contato col-md-3">
+					<ul>
+						<li>
+							<img src="images/icon-phone.png" alt="icone telefone">
+							<span>(55 11) 3333.3333</span>
+						</li>
+						<li>
+							<img src="images/icon-email.png" alt="icone fale conosco">
+							<span class="open_pop_up"  data-url="templates/contato.html" data-titulo="Entre em contato para solicitar mais informações"> Fale conosco</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="redes_sociais col-md-3">
+					<h4>Produtos do Grupo PIX nas redes sociais</h4>
+					<ul>
+						<li>
+							<span>Infinity Plus</span>
+							<a href="#" class="youtube"> </a>
+							<a href="#" class="facebook"> </a>
+							<a href="#" class="twitter"> </a>
+						</li>
+						<li>
+							<span>Web Inteligente</span>
+							<a href="#" class="youtube"> </a>
+							<a href="#" class="facebook"> </a>
+							<a href="#" class="twitter"> </a>
+						</li>
+						<li>
+							<span>YouRocket</span>
+							<a href="#" class="facebook"> </a>
+							<a href="#" class="twitter"> </a>
+						</li>	
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="sub_rodape">
+		<div class="container ">
+			<div class="row">
+				<p class="copyright">© 2017. Todos os direitos reservados. | Política de Privacidade</p>
+			</div>
+		</div>
+	</section>
+</footer>
+
+<section class="overlay_pop">
+	<div class="pop_up">
+		<div class="header">
+			<h2>pop_up</h2>
+		</div>
+		<button class="fechar"></button>
+		<div class="conteudo">
+			
+		</div>		
+	</div>
+	<script>
+	$(".overlay_pop").hide();
+	</script>
+</section>
+
+
+
 
 </body>
 </html>
