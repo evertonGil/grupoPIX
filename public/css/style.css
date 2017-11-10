@@ -1467,7 +1467,6 @@ header .logo img {
     -webkit-background-size: auto auto;
     background-size: auto;
     height: auto;
-    min-height: 578px;
     margin-left: 15px;
     margin-right: 15px;
     border: 1px solid #ccc;
@@ -1557,6 +1556,7 @@ header .logo img {
 }
 @media (max-width: 480px) {
   .banner_trabalhe_conosco .conteudo {
+    height: auto;
     max-width: 100%;
     display: inline-block;
     background: #fff;
